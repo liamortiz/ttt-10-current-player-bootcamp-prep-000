@@ -1,5 +1,5 @@
 def turn_count(board)
-  9 - board.count{ |e| e == "X" or e == "O"}
+  board.count{ |e| e == "X" or e == "O"} - 9
 end
 
 def current_player(board)
